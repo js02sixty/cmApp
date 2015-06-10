@@ -1,0 +1,80 @@
+@import 'nib'
+@import 'lost'
+@import 'rupture'
+// @import 'bootstrap'
+
+normalize-css()
+
+// Global Variables
+$spacing = 1em
+
+// Color Definitions
+$avacado = #999967
+$dovegray = #666666
+$gray = #CCCCCC
+$pineglade = #CCCC9A
+
+// Components
+@import 'styl/fonts'
+@import 'styl/form'
+
+body
+  // background-image url('http://subtlepatterns.com/patterns/congruent_outline.png')
+  background-image url(/assets/images/webtreatsetc-retro-grunge-9.jpg)
+  margin .5em
+
+.container
+  // edit()
+  box-shadow 0 0 1em
+  margin-top 1em
+  padding $spacing
+  background-color rgba(255,255,255,.4)
+  border-radius 1em
+  center(50em)
+  clearfix()
+
+
+#top
+  nav
+    margin-bottom 2em
+    ul
+      margin-left 0
+      padding 0
+      white-space nowrap
+    li
+      background linear-gradient(top, $dovegray 10%, black 80%)
+      padding .5em 1em
+      margin-right .5em
+      border-radius .5em
+      display inline
+      font-size .75em
+    a
+      font-family kleymisskyregular
+      font-size 2em
+      text-decoration none
+      color white
+    a:hover
+      text-blur 1em
+
+#menu
+  // edit()
+  margin-bottom 1em
+  column('3/3',$gut:$spacing)
+  +above(desktop-cutoff)
+    column('1/3',$gut:$spacing)
+
+#content
+  // margin 1em 0
+  column('3/3',$gut:$spacing)
+  +above(desktop-cutoff)
+    column('2/3',$gut:$spacing)
+
+.panel
+  box-shadow 0 0 1em
+  padding 1em
+  border-radius .5em
+  background-color white
+  h1
+    font-family 'Josefin Sans' sans-serif
+  p
+    font-family kleymisskyregular
