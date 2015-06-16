@@ -10,7 +10,7 @@ angular.module('cmApp')
     // });
     // $scope.users = Restangular.all('users').getList().$object;
     // $scope.users = [{'username': 'john', 'email': 'js02sixty@gmail.com'}]
-    $scope.products = Restangular.all('products').getList().$object;
-  
+    $scope.products = Restangular.all('usergroups').getList().$object;
+
   })
 ;
